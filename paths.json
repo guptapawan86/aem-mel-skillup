@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/aem-mel-skillup/:/",
+    "/content/aem-mel-skillup/configuration:/.helix/config.json",
+    "/content/aem-mel-skillup/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/aem-mel-skillup/"
   ]
 }
