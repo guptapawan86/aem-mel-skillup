@@ -32,7 +32,7 @@ export default async function decorate(block) {
   block.setAttribute('data-aue-type', 'container');
   block.innerHTML = `
     <div class="achievement-card" data-aue-resource=${itemId} data-aue-label="achievement content fragment" data-aue-type="reference" data-aue-filter="cf">
-      <div class="achievement-image" style="background-image: url('${data?.image}');"></div>
+      <div class="achievement-image" style="background-image: url('${data?.image?.dynamicUrl}');"></div>
       <div class="achievement-content">
         <span class="achievement-category" data-aue-prop="category" data-aue-label="category" data-aue-type="text">${data?.category}</span>
         <h3 class="achievement-title" data-aue-prop="achievementTitle" data-aue-label="title" data-aue-type="text">${data?.achievementTitle}</h3>
