@@ -29,8 +29,7 @@ export default async function decorate(block) {
   }
 
   const itemId = `urn:aemconnection:${contentPath}/jcr:content/data/${variationname}`;
-  const imageUrl = ${data?.image?._path};
-
+  const imageUrl = ${data?.image?.path};
   block.setAttribute('data-aue-type', 'container');
   block.innerHTML = `
     <div class="achievement-card" data-aue-resource=${itemId} data-aue-label="achievement content fragment" data-aue-type="reference" data-aue-filter="cf">
