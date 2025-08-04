@@ -29,7 +29,7 @@ export default async function decorate(block) {
   }
 
   const itemId = `urn:aemconnection:${contentPath}/jcr:content/data/${variationname}`;
-  const imageUrl = `${aemauthorurl}${data?.image?._path}`;
+  const imageUrl = ${data?.image?._path}
 
   block.setAttribute('data-aue-type', 'container');
   block.innerHTML = `
