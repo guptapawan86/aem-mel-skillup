@@ -746,7 +746,6 @@ async function waitForFirstImage(section) {
   });
 }
 
-
 /**
  * Loads all blocks in a section.
  * @param {Element} section The section element
@@ -766,7 +765,6 @@ async function loadSection(section, loadCallback) {
     section.style.display = null;
   }
 }
-
 
 /**
  * Load LCP block and/or wait for LCP in default content.
@@ -790,7 +788,6 @@ async function waitForLCP(lcpBlocks) {
     }
   });
 }
-
 
 async function loadSections(element) {
   const sections = [...element.querySelectorAll('div.section')];
