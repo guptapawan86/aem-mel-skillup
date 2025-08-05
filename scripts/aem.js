@@ -752,6 +752,18 @@ async function waitForLCP(lcpBlocks) {
   });
 }
 
+
+async function loadSections(element) {
+  const sections = [...element.querySelectorAll('div.section')];
+  for (let i = 0; i < sections.length; i += 1) {
+    // eslint-disable-next-line no-await-in-loop
+    await loadSection(sections[i]);
+    if (i === 0 && sampleRUM.enhance) {
+      sampleRUM.enhance();
+    }
+  }
+}
+
 init();
 
 export {
@@ -771,6 +783,7 @@ export {
   loadFooter,
   loadHeader,
   loadScript,
+  loadSections,
   readBlockConfig,
   sampleRUM,
   setup,

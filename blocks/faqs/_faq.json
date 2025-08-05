@@ -57,7 +57,7 @@
         },
         {
           "component": "text",
-          "name": "faq_anchor_link",
+          "name": "anchor_link",
           "value": "",
           "label": "Anchor Link",
           "valueType": "string"
