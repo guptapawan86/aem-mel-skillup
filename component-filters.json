@@ -16,7 +16,8 @@
       "cards",
       "columns",
       "fragment",
-      "content-fragment"
+      "content-fragment",
+      "faqs"
     ]
   },
   {
@@ -38,6 +39,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "faqs",
+    "components": [
+      "faq"
     ]
   }
 ]
