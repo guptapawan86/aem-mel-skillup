@@ -52,7 +52,8 @@
         "columns",
         "fragment",
         "content-fragment",
-        "faqs"
+        "faqs",
+        "screen"
       ]
     }
   ]

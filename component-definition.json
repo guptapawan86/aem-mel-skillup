@@ -201,6 +201,51 @@
               }
             }
           }
+        },
+        {
+          "title": "Screen",
+          "id": "screen",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Screens",
+                  "filter": "screens"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hero Screen",
+          "id": "hero-screen",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Hero Screen",
+                  "model": "hero-screen"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Feature Screen",
+          "id": "feature-screen",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Feature Screen",
+                  "model": "feature-screen"
+                }
+              }
+            }
+          }
         }
       ]
     }

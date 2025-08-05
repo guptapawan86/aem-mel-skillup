@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "content-fragment",
-      "faqs"
+      "faqs",
+      "screen"
     ]
   },
   {
@@ -45,6 +46,13 @@
     "id": "faqs",
     "components": [
       "faq"
+    ]
+  },
+  {
+    "id": "screens",
+    "components": [
+      "hero-screen",
+      "feature-screen"
     ]
   }
 ]

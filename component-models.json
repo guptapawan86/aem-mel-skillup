@@ -269,5 +269,90 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "hero-screen",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "subtitle",
+        "value": "",
+        "label": "Subtitle",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "background_image",
+        "value": "",
+        "label": "Background Image",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "cta_buttons",
+        "value": "Get Started|/get-started|primary,Learn More|/about|secondary",
+        "label": "CTA Buttons",
+        "valueType": "string",
+        "description": "Format: Text|URL|Type,Text|URL|Type (e.g., Get Started|/start|primary,Learn More|/about|secondary)"
+      }
+    ]
+  },
+  {
+    "id": "feature-screen",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "value": "",
+        "label": "Feature Image",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "style",
+        "value": "default",
+        "label": "Screen Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Default Layout",
+            "value": "default"
+          },
+          {
+            "name": "Split Layout",
+            "value": "split"
+          },
+          {
+            "name": "Red Background",
+            "value": "red"
+          },
+          {
+            "name": "Dark Background",
+            "value": "dark"
+          }
+        ]
+      }
+    ]
   }
 ]
