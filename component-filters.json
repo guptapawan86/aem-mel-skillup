@@ -18,7 +18,6 @@
       "fragment",
       "content-fragment",
       "faqs",
-      "screens",
       "banners"
     ]
   },
@@ -53,12 +52,6 @@
     "id": "faqs",
     "components": [
       "faq"
-    ]
-  },
-  {
-    "id": "screens",
-    "components": [
-      "screen"
     ]
   }
 ]
