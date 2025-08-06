@@ -18,7 +18,7 @@
       "fragment",
       "content-fragment",
       "faqs",
-      "screen"
+      "screens"
     ]
   },
   {
@@ -49,9 +49,9 @@
     ]
   },
   {
-    "id": "cards",
+    "id": "screens",
     "components": [
-      "card"
+      "screen"
     ]
   }
 ]
