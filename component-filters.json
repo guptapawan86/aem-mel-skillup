@@ -18,7 +18,14 @@
       "fragment",
       "content-fragment",
       "faqs",
-      "screens"
+      "screens",
+      "banners"
+    ]
+  },
+  {
+    "id": "banners",
+    "components": [
+      "banner"
     ]
   },
   {
