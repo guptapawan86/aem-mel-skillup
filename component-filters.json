@@ -51,7 +51,7 @@
   {
     "id": "screen",
     "components": [
-      "red-feature-screen"
+      "screen"
     ]
   }
 ]

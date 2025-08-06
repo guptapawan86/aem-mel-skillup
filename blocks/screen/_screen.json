@@ -14,60 +14,49 @@
           }
         }
       }
-    },
-    {
-      "title": "Red Feature Screen",
-      "id": "red-feature-screen",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/block/v1/block/item",
-            "template": {
-              "name": "Red Feature Screen",
-              "model": "red-feature-screen"
-            }
-          }
-        }
-      }
     }
   ],
   "filters": [
     {
       "id": "screen",
-      "components": ["red-feature-screen"]
+      "components": ["screen"]
     }
   ],
   "models": [
     {
-      "id": "red-feature-screen",
+      "id": "screen",
       "fields": [
         {
           "component": "text",
           "valueType": "string",
           "name": "title",
           "value": "Congrats to our community member of the year!",
-          "label": "Title"
+          "label": "Title",
+          "description": "Main heading text for the screen"
         },
         {
           "component": "richtext",
           "name": "description",
           "value": "Jennifer Dungan<br/>Optimization Manager, Analytics,<br/>Metroland Media Group",
           "label": "Description",
-          "valueType": "string"
+          "valueType": "string",
+          "description": "Content description with HTML formatting support"
         },
         {
           "component": "reference",
           "name": "profile_image",
           "value": "/images/member-profile.jpg",
-          "label": "Profile Image (Circular)",
-          "valueType": "string"
+          "label": "Profile Image",
+          "valueType": "string",
+          "description": "Profile image URL (displayed as circular image)"
         },
         {
           "component": "text",
           "name": "image_alt",
           "value": "Jennifer Dungan profile photo",
           "label": "Image Alt Text",
-          "valueType": "string"
+          "valueType": "string",
+          "description": "Alt text for the profile image (accessibility)"
         }
       ]
     }

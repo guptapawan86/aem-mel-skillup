@@ -216,21 +216,6 @@
               }
             }
           }
-        },
-        {
-          "title": "Red Feature Screen",
-          "id": "red-feature-screen",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Red Feature Screen",
-                  "model": "red-feature-screen"
-                }
-              }
-            }
-          }
         }
       ]
     }
