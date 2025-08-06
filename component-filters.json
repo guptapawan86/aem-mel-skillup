@@ -18,7 +18,7 @@
       "fragment",
       "content-fragment",
       "faqs",
-      "screens"
+      "screen"
     ]
   },
   {
@@ -49,10 +49,9 @@
     ]
   },
   {
-    "id": "screens",
+    "id": "screen",
     "components": [
-      "hero-screen",
-      "feature-screen"
+      "red-feature-screen"
     ]
   }
 ]
