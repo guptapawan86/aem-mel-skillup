@@ -15,8 +15,8 @@
 }
 
 .faqs .faq-item.visible .faq-title {
-    background: var(--dark-color);
-    color: var(--white);
+    background: #0070c9;
+    color: azure;
 }
 
 .faqs .faq-item .faq-title h1,
