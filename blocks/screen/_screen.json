@@ -8,8 +8,8 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
-              "name": "Screen",
-              "filter": "screen"
+              "name": "Screens",
+              "filter": "screens"
             }
           }
         }
@@ -48,7 +48,7 @@
   ],
   "filters": [
     {
-      "id": "screen",
+      "id": "screens",
       "components": ["hero-screen", "feature-screen"]
     }
   ],
