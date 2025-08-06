@@ -302,5 +302,41 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "menubar",
+    "fields": [
+      {
+        "component": "container",
+        "name": "menubarItems",
+        "label": "Menubar Items",
+        "multi": true,
+        "fields": [
+          {
+            "component": "text",
+            "name": "title",
+            "value": "",
+            "label": "Title of the Menubar Item",
+            "valueType": "string"
+          },
+          {
+            "component": "aem-content",
+            "name": "titleUrl",
+            "value": "",
+            "label": "Title URL",
+            "valueType": "string",
+            "validation": {
+              "rootPath": "/content/cognizant-dot-com"
+            }
+          },
+          {
+            "component": "boolean",
+            "valueType": "boolean",
+            "name": "linkBehaviour",
+            "label": "Open in New Tab"
+          }
+        ]
+      }
+    ]
   }
 ]
