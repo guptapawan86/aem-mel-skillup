@@ -49,7 +49,7 @@
     ]
   },
   {
-    "id": "screens",
+    "id": "screen",
     "components": [
       "hero-screen",
       "feature-screen"
