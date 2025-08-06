@@ -274,31 +274,17 @@
     "id": "screen",
     "fields": [
       {
-        "component": "text",
+        "component": "reference",
         "valueType": "string",
-        "name": "title",
-        "value": "Congrats to our community member of the year!",
-        "label": "Title"
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
         "component": "richtext",
-        "name": "description",
-        "value": "Jennifer Dungan<br/>Optimization Manager, Analytics,<br/>Metroland Media Group",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
-        "component": "reference",
-        "name": "image",
-        "value": "/images/member-profile.jpg",
-        "label": "Profile Image",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "alt",
-        "value": "Jennifer Dungan profile photo",
-        "label": "Image Alt Text",
+        "name": "text",
+        "value": "",
+        "label": "Text",
         "valueType": "string"
       }
     ]
