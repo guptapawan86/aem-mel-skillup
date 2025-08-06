@@ -203,8 +203,8 @@
           }
         },
         {
-          "title": "Screen",
-          "id": "screen",
+          "title": "Screens",
+          "id": "screens",
           "plugins": {
             "xwalk": {
               "page": {
