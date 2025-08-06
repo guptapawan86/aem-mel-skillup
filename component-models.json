@@ -278,32 +278,28 @@
         "valueType": "string",
         "name": "title",
         "value": "Congrats to our community member of the year!",
-        "label": "Title",
-        "description": "Main heading text for the screen"
+        "label": "Title"
       },
       {
         "component": "richtext",
         "name": "description",
         "value": "Jennifer Dungan<br/>Optimization Manager, Analytics,<br/>Metroland Media Group",
         "label": "Description",
-        "valueType": "string",
-        "description": "Content description with HTML formatting support"
+        "valueType": "string"
       },
       {
         "component": "reference",
-        "name": "profile_image",
+        "name": "image",
         "value": "/images/member-profile.jpg",
         "label": "Profile Image",
-        "valueType": "string",
-        "description": "Profile image URL (displayed as circular image)"
+        "valueType": "string"
       },
       {
         "component": "text",
-        "name": "image_alt",
+        "name": "alt",
         "value": "Jennifer Dungan profile photo",
         "label": "Image Alt Text",
-        "valueType": "string",
-        "description": "Alt text for the profile image (accessibility)"
+        "valueType": "string"
       }
     ]
   }

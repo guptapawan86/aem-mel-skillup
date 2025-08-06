@@ -1,103 +1,46 @@
-/**
- * Screen Component for Edge Delivery Services
- * Supports multiple variants: hero, feature, content
- */
-
-function readBlockConfig(block) {
-  const config = {};
+export default function decorate(block) {
+  // Get all rows from the block
   const rows = [...block.children];
 
-  rows.forEach((row) => {
-    if (row.children.length >= 2) {
-      const key = row.children[0].textContent.trim().toLowerCase().replace(/\s+/g, '');
-      const value = row.children[1].textContent.trim();
+  // Create the main container
+  const container = document.createElement('div');
+  container.className = 'screen-container';
 
-      // Handle boolean values
-      if (value === 'true' || value === 'false') {
-        config[key] = value === 'true';
-      } else {
-        config[key] = value;
+  // Process each row to build the screen content
+  rows.forEach((row) => {
+    const cells = [...row.children];
+    if (cells.length >= 2) {
+      const key = cells[0].textContent.trim().toLowerCase();
+      const value = cells[1];
+
+      if (key === 'title') {
+        const title = document.createElement('h2');
+        title.className = 'screen-title';
+        title.textContent = value.textContent.trim();
+        container.appendChild(title);
+      } else if (key === 'description') {
+        const description = document.createElement('div');
+        description.className = 'screen-description';
+        description.innerHTML = value.innerHTML;
+        container.appendChild(description);
+      } else if (key === 'image' || key === 'profile_image') {
+        const imageContainer = document.createElement('div');
+        imageContainer.className = 'screen-image';
+
+        const img = value.querySelector('img');
+        if (img) {
+          img.className = 'screen-profile-image';
+          imageContainer.appendChild(img);
+        }
+        container.appendChild(imageContainer);
       }
     }
   });
 
-  return config;
-}
-
-function buildRedFeatureScreen(block, config) {
-  const featureContainer = document.createElement('div');
-  featureContainer.className = 'screen-feature-container';
-
-  // Content wrapper with split layout
-  const content = document.createElement('div');
-  content.className = 'screen-feature-content';
-
-  // Text content
-  const textContent = document.createElement('div');
-  textContent.className = 'screen-text-content';
-
-  if (config.title) {
-    const title = document.createElement('h2');
-    title.className = 'screen-feature-title';
-    title.textContent = config.title;
-    textContent.appendChild(title);
-  }
-
-  if (config.description) {
-    const description = document.createElement('div');
-    description.className = 'screen-feature-description';
-    description.innerHTML = config.description; // Use innerHTML to support <br/> tags
-    textContent.appendChild(description);
-  }
-
-  content.appendChild(textContent);
-
-  // Image content - always show if available
-  const imageUrl = config.profile_image || config.image;
-  if (imageUrl) {
-    const imageContainer = document.createElement('div');
-    imageContainer.className = 'screen-image-content';
-
-    const image = document.createElement('img');
-    image.src = imageUrl;
-    image.alt = config.image_alt || config.imageAlt || 'Profile photo';
-    image.className = 'screen-feature-image';
-
-    imageContainer.appendChild(image);
-    content.appendChild(imageContainer);
-  }
-
-  featureContainer.appendChild(content);
-  block.appendChild(featureContainer);
-}
-
-function addScrollAnimations(block) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('screen-animated');
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px',
-  });
-
-  observer.observe(block);
-}
-
-export default function decorate(block) {
-  const config = readBlockConfig(block);
-
-  // Clear the block content
+  // Clear the original block content and add the new structure
   block.innerHTML = '';
+  block.appendChild(container);
 
-  // Add screen classes
-  block.classList.add('screen-feature', 'screen-style-red');
-
-  // Build red feature screen
-  buildRedFeatureScreen(block, config);
-
-  // Add intersection observer for animations
-  addScrollAnimations(block);
+  // Add CSS classes for styling
+  block.classList.add('screen-block');
 }

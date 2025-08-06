@@ -49,9 +49,9 @@
     ]
   },
   {
-    "id": "screen",
+    "id": "cards",
     "components": [
-      "screen"
+      "card"
     ]
   }
 ]
