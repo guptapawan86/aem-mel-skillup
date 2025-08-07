@@ -324,10 +324,7 @@
             "name": "titleUrl",
             "value": "",
             "label": "Title URL",
-            "valueType": "string",
-            "validation": {
-              "rootPath": "/content/cognizant-dot-com"
-            }
+            "valueType": "string"
           },
           {
             "component": "boolean",
