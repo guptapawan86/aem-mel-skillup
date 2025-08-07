@@ -46,7 +46,9 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "faqs",
+      "cards"
     ]
   },
   {
